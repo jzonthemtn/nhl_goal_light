@@ -24,7 +24,6 @@ def get_team_id(team_name):
     url = '{0}teams'.format(NHL_API_URL)
     response = requests.get(url)
     results = response.json()
-    teams = []
 
     for team in results['teams']:
         if team['franchise']['teamName'] == team_name:
