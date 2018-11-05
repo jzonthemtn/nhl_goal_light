@@ -3,7 +3,6 @@
 import datetime
 import time
 import os
-import requests
 from lib import nhl
 from lib import light
 
