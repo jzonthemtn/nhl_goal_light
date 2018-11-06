@@ -60,6 +60,7 @@ def fetch_score(team_id):
 
 def check_season():
     """ Function to check if in season. Returns True if in season, False in off season. """
+
     # Get current time
     now = datetime.datetime.now()
     if now.month in (7, 8):
@@ -71,7 +72,6 @@ def check_season():
 def check_if_game(team_id):
     """ Function to check if there is a game now with chosen team. Returns True if game, False if NO game. """
 
-    
     # Set URL depending on team selected
     url = '{0}schedule?teamId={1}'.format(NHL_API_URL, team_id) #Only shows games after noon, so will sleep till 12:10 pm
     try:
@@ -85,7 +85,6 @@ def check_if_game(team_id):
         print("Error encountered, returning True for check_game")
         return True
 
-      
 def check_game_end(team_id):
     """ Function to check if the game ofchosen team is over. Returns True if game, False if NO game. """
 
