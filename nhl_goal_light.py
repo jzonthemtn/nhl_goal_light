@@ -89,6 +89,8 @@ if __name__ == "__main__":
 
     team_id, delay = setup_nhl()
 
+    light.activate_goal_light()
+
     try:
 
         while (True):
