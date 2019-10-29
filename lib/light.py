@@ -24,10 +24,11 @@ def setup():
 def activate_goal_light(gpio_event_var=0):
     """ Function to activate GPIO for goal light and plar random audio clip. """
     print "Activating light"
-    songrandom = random.randint(3, 3) #Set random numbers depending on number of audio clips available
+    #songrandom = random.randint(3, 3) #Set random numbers depending on number of audio clips available
     # Prepare commande to play sound (change file name if needed)
     pygame.mixer.init()
-    pygame.mixer.music.load('/home/pi/nhl_goal_light/audio/goal_horn_{SongId}.mp3'.format(SongId=str(songrandom)))
+    #pygame.mixer.music.load('/opt/nhl_goal_light/audio/goal_horn_{SongId}.mp3'.format(SongId=str(songrandom)))
+    pygame.mixer.music.load('/opt/nhl_goal_light/audio/goal_horn_5.mp3')
     pygame.mixer.music.play()
     print "Turning on light"
     GPIO.output(21, GPIO.LOW) #Turn on light, active low relay, so on is low
