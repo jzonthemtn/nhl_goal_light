@@ -1,33 +1,28 @@
 # nhl_goal_light
 
-[![GitHub release](https://img.shields.io/github/release/arim215/nhl_goal_light.svg)](https://github.com/arim215/nhl_goal_light/releases)
-[![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/arim215/nhl_goal_light.svg)](https://github.com/arim215/nhl_goal_light/commits/master)
-[![closed pull requests](https://img.shields.io/github/issues-pr-closed/arim215/nhl_goal_light.svg)](https://github.com/arim215/nhl_goal_light/pulls?q=is%3Apr+is%3Aclosed)
-[![Libraries.io for GitHub](https://img.shields.io/librariesio/github/arim215/nhl_goal_light.svg)](https://github.com/arim215/nhl_goal_light/blob/master/requirements.txt)
-[![license](https://img.shields.io/github/license/arim215/nhl_goal_light.svg)](https://github.com/arim215/nhl_goal_light/blob/master/LICENSE)
+Forked from https://github.com/arim215/nhl_goal_light.
 
 ## Overview
 
-Nhl goal light python3 for raspberry pi GPIO. Works with any team, just enter team **name without city** when prompted.
+Nhl goal light python for raspberry pi GPIO. Works with any team, just enter team **name without city** when prompted.
 
 Before use, make sure you have:
 
-python3, python3-pip, git
+python, python-pip, git
 
 Run the following commands manually to install requirements
 
 run:
 
-    $ sudo apt-get install git mpg123 python3 python-pip3
-    $ sudo git clone https://github.com/arim215/nhl_goal_light.git 
-    $ sudo pip3 install -r requirements.txt
-        
+    $ sudo apt-get install -y git mpg123 python python-pip
+    $ git clone https://github.com/arim215/nhl_goal_light.git
+    $ pip install -r requirements.txt
 
 You can prepare a "settings.txt" file to auto-config the nhl_goal_light.py code, or the code will ask for your input everytime.
 
 To start application, use following commands:
-	
-    $ sudo python3 nhl_goal_light.py
+
+    $ python nhl_goal_light.py
 
 ***
 ### Materials
