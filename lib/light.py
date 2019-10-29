@@ -29,7 +29,7 @@ def activate_goal_light(gpio_event_var=0):
     pygame.mixer.init()
     #pygame.mixer.music.load('/opt/nhl_goal_light/audio/goal_horn_{SongId}.mp3'.format(SongId=str(songrandom)))
     pygame.mixer.music.load('/opt/nhl_goal_light/audio/goal_horn_5.mp3')
-    pygame.mixer.music.play()
+    pygame.mixer.music.play(3)
     print "Turning on light"
     GPIO.output(21, GPIO.LOW) #Turn on light, active low relay, so on is low
     while pygame.mixer.music.get_busy() == True:
